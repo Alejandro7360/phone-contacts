@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "item clicked : \n"+contactList.get(position), Toast.LENGTH_SHORT).show();
                 String phone;
                 Log.d("CONTACT", contactList.get(position));
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "6673244178"));
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + contactList.get(position)));
                 startActivity(intent);
             }
         });
